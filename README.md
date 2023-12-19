@@ -5,4 +5,4 @@ Getting Started:
 
 Clone the repository: git clone (https://github.com/JamesJFan/moodlens)
 Run the app: python app.py
-Access the app in your browser: http://localhost:5000
+Access the app in your browser: (http://127.0.0.1:5000/)
