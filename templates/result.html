@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodJournal - Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #555;
+            max-width: 600px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Analysis Result</h2>
+    <p>Your text:</p>
+    <p style="font-weight: bold; font-size: 1.2em;">{{ text }}</p>
+    <p>Sentiment: <span style="color: {% if sentiment == 'Positive' %}green{% elif sentiment == 'Negative' %}red{% else %}blue{% endif %}; font-weight: bold;">{{ sentiment }}</span></p>
+    <a href="/" style="font-size: 1.2em;">Back to Home</a>
+</body>
+</html>
